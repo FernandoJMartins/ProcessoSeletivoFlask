@@ -177,8 +177,4 @@ def service_get_geral_resumo():
                 new_data[p_name].append('')  
                 
 
-    # for platform_data in new_data.values():
-    #     while len(platform_data) < len(field_names) + 3:
-    #         platform_data.append('')
-
     return export_csv(new_data.values(), field_names)    
